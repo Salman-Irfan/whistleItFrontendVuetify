@@ -33,14 +33,6 @@
                             prepend-icon="mdi-note-plus"
                             :rules="rules"
                         ></v-textarea>
-                        <!-- file input with @change function=> selectFile() -->
-                        <v-file-input
-                            @change="selectFile"
-                            label="Select Picture"
-                            show-size
-                            counter
-                            multiple
-                        ></v-file-input>
                         <!-- submit button -->
                         <v-btn type="submit" class="mt-3" color="primary"
                             >Add Post</v-btn

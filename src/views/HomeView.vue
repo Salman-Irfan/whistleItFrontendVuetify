@@ -7,7 +7,6 @@
                     class="pa-1"
                     :to="{ name: 'PostDetails', params: { id: post._id } }"
                 >
-                    <v-img height="250" :src="`/${post.image}`"></v-img>
                     <!-- post category -->
                     <v-btn class="ml-4 mt-3" small outlined color="indigo">
                         {{ post.category }}

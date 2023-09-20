@@ -45,6 +45,8 @@
 </template>
 
 <script>
+import API from '@/api/api';
+
 
 export default {
     name: "AddPost",
@@ -55,27 +57,20 @@ export default {
                 title: "",
                 category: "",
                 content: "",
-                image: "",
             },
-            image: "",
         };
     },
     // methods
     methods: {
-        // select file
-        selectFile(file) {
-            this.image = file[0];
-        },
-        // submit form
-        async submitForm() {
-            const formData = new FormData();
-            formData.append("image", this.image);
-            formData.append("title", this.post.title);
-            formData.append("category", this.post.category);
-            formData.append("content", this.post.content);
-            // submit the form if validates properly
-            
-        },
+        submitForm(){
+            let postObject = {
+                title: this.post.title,
+                category: this.post.category,
+                content: this.post.content
+            }
+            API.addPost(postObject)
+            // reditrect to home
+        }
     },
 };
 </script>

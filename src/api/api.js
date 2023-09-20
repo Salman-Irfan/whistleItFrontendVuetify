@@ -17,26 +17,6 @@ export default class API {
     static async addPost(post) {
         const res = await axios.post(url, post)
         return res.data
-        // with fetch api
-        // try {
-        //     const response = await fetch(url, {
-        //         method: "POST",
-        //         headers: {
-        //             "Content-Type": "application/json",
-        //         },
-        //         body: JSON.stringify(post),
-        //     });
-
-        //     if (!response.ok) {
-        //         throw new Error("Failed to add post");
-        //     }
-
-        //     const data = await response.json();
-        //     return data;
-        // } catch (error) {
-        //     console.error("Error adding post:", error);
-        //     throw error;
-        // }
     }
     // 4. to update a post by id in the database
     static async updatePost(id, post) {

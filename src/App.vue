@@ -4,9 +4,16 @@
             <!-- inside side nav -->
             <VListItem>
                 <VListItemContent>
-                    <v-list-item-title>MEVN</v-list-item-title>
+                    <!-- header -->
+                    <v-list-item-title>
+                        Whistle It
+                    </v-list-item-title>
+                    <!-- description -->
                     <VListItemSubtitle>
-                        Full Stack Development
+                        Team Chatting System 
+                    </VListItemSubtitle>
+                    <VListItemSubtitle>
+                        Within an Organization 
                     </VListItemSubtitle>
                 </VListItemContent>
             </VListItem>
